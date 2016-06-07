@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MGDetailViewController" customModule="MGSlideViewDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="mFU-Ei-6Af" id="wMA-en-lpN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="GY1-fh-YjW">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="12" translatesAutoresizingMaskIntoConstraints="NO" id="5PI-Pg-cMO">
+                    <rect key="frame" x="50" y="50" width="59" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="EN2-Kr-tfs"/>
+                        <constraint firstAttribute="width" constant="59" id="OfP-D7-2Gd"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mFU-Ei-6Af">
+                    <rect key="frame" x="0.0" y="153" width="375" height="414"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="z3X-4R-hBe"/>
+                        <outlet property="delegate" destination="-1" id="ySN-ib-K7q"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oyb-Av-lNw">
+                    <rect key="frame" x="26" y="606" width="73" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="iOt-tJ-U8r"/>
+                        <constraint firstAttribute="width" constant="73" id="mcR-pL-06T"/>
+                    </constraints>
+                    <state key="normal" title="设置" image="set1"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Q1-sc-W8j">
+                    <rect key="frame" x="124" y="606" width="73" height="37"/>
+                    <state key="normal" title="夜间" image="我的名片夹"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQq-xx-yRA">
+                    <rect key="frame" x="214" y="606" width="73" height="37"/>
+                    <state key="normal" title="梅州"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="jQq-xx-yRA" firstAttribute="top" secondItem="5Q1-sc-W8j" secondAttribute="top" id="0ZI-1O-4nj"/>
+                <constraint firstItem="Oyb-Av-lNw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="26" id="1N8-7S-C9i"/>
+                <constraint firstItem="5PI-Pg-cMO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="4ny-cc-BjA"/>
+                <constraint firstItem="GY1-fh-YjW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9Yg-iC-lJY"/>
+                <constraint firstItem="5Q1-sc-W8j" firstAttribute="width" secondItem="Oyb-Av-lNw" secondAttribute="width" id="CH1-DZ-6dO"/>
+                <constraint firstAttribute="trailing" secondItem="mFU-Ei-6Af" secondAttribute="trailing" id="Cw0-Kv-tRy"/>
+                <constraint firstAttribute="bottom" secondItem="GY1-fh-YjW" secondAttribute="bottom" id="DTo-tM-knK"/>
+                <constraint firstItem="jQq-xx-yRA" firstAttribute="bottom" secondItem="5Q1-sc-W8j" secondAttribute="bottom" id="Ghj-Ge-d0s"/>
+                <constraint firstItem="5Q1-sc-W8j" firstAttribute="top" secondItem="Oyb-Av-lNw" secondAttribute="top" id="KUF-iI-fpm"/>
+                <constraint firstAttribute="bottom" secondItem="Oyb-Av-lNw" secondAttribute="bottom" constant="24" id="NP3-tm-0z5"/>
+                <constraint firstAttribute="bottom" secondItem="mFU-Ei-6Af" secondAttribute="bottom" constant="100" id="OfU-KO-BKc"/>
+                <constraint firstItem="5Q1-sc-W8j" firstAttribute="leading" secondItem="Oyb-Av-lNw" secondAttribute="trailing" constant="25" id="TQk-BC-jG6"/>
+                <constraint firstItem="jQq-xx-yRA" firstAttribute="width" secondItem="5Q1-sc-W8j" secondAttribute="width" id="cAd-CI-DLc"/>
+                <constraint firstItem="5PI-Pg-cMO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="in9-WE-byE"/>
+                <constraint firstItem="mFU-Ei-6Af" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kJ4-cm-TOv"/>
+                <constraint firstItem="jQq-xx-yRA" firstAttribute="leading" secondItem="5Q1-sc-W8j" secondAttribute="trailing" constant="17" id="mFd-cR-Bmj"/>
+                <constraint firstItem="GY1-fh-YjW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sJ3-0x-Kaf"/>
+                <constraint firstItem="5Q1-sc-W8j" firstAttribute="bottom" secondItem="Oyb-Av-lNw" secondAttribute="bottom" id="u4K-q1-7QH"/>
+                <constraint firstAttribute="trailing" secondItem="GY1-fh-YjW" secondAttribute="trailing" id="u6x-m1-tay"/>
+                <constraint firstItem="mFU-Ei-6Af" firstAttribute="top" secondItem="5PI-Pg-cMO" secondAttribute="bottom" constant="47" id="wc7-mZ-y3S"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gKY-b9-2Q1">
+            <rect key="frame" x="0.0" y="0.0" width="65" height="37"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+            <state key="normal" title="夜间" image="我的名片夹">
+                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            </state>
+        </button>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IQD-6M-P4p">
+            <rect key="frame" x="0.0" y="0.0" width="65" height="37"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <state key="normal" title="深圳">
+                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            </state>
+        </button>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qLF-08-jJB">
+            <rect key="frame" x="0.0" y="0.0" width="65" height="37"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+            <state key="normal" title="设置" image="set1">
+                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            </state>
+        </button>
+    </objects>
+    <resources>
+        <image name="12" width="79" height="80"/>
+        <image name="back" width="540" height="960"/>
+        <image name="set1" width="37" height="37"/>
+        <image name="我的名片夹" width="20" height="20"/>
+    </resources>
+</document>
